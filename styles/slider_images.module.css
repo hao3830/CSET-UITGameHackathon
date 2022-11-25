@@ -1,0 +1,20 @@
+.bao {
+    display: flex;
+}
+.btn {
+    text-align: center;
+    
+}
+.btnye {
+   margin: 10px 0px;
+}
+.btnye:hover {
+    font-size: 15px;
+}
+
+.btnclick {
+    font-size: 20px;
+}
+.btnset {
+    font-size: 20px;
+}

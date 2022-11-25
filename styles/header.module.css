@@ -1,0 +1,57 @@
+.header_bar {
+    position: absolute;
+    width: 1536px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #272424;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+}
+
+.img_header {
+    position: absolute;
+    width: 7.32%;
+    height: 90%;
+    left: 5.66%;
+    top: 0px;
+
+}
+
+.signup_login {
+    justify-content: center;
+    margin-right: 87.36%;
+}
+
+.setSignup {
+    position: absolute;
+    width: 4.03%;
+    height: 18.75%;
+    left: 73.76%;
+    top: 32px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #D9D9D9;
+
+}
+
+.setLogin {
+    box-sizing: border-box;
+    color: #2D9318;
+    position: absolute;
+    width: 137px;
+    height: 33.6px;
+    left: 1205px;
+    top: 23px;
+
+    border: 3px solid #2D9318;
+    border-radius: 16px;
+    text-align: center;
+}
