@@ -1,0 +1,60 @@
+.funct {
+    display:flex;
+}
+
+.funct_left_box1 {
+    position: absolute;
+    width: 21.87%;
+    height: 300px;
+    left: 9.09%;
+    top: 1340px;
+    
+    background: #2FB814;
+}
+.funct_left_box2 {
+    position: absolute;
+width: 21.87%;
+height: 300px;
+left: 21.87%;
+top: 1250px;
+
+background: #FFFFFF;
+}
+
+.funct_right h1 {
+
+    position: absolute;
+    width: 42.36%;
+    height: 73px;
+    right: 6.94%;
+    top: 1388px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: right;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+}
+.funct_right p {
+    
+position: absolute;
+width: 35.06;
+height: 100px;
+right: 6.94%;
+left: 57.98%;
+top: 1458px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: right;
+
+color: #FFFFFF;
+}

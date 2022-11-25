@@ -1,0 +1,24 @@
+.main {
+    background: #1E1E1E;
+    height:2500px;
+  
+
+}
+.main_chunen {
+    position: absolute;
+    width: 2356px;
+    height: 856px;
+    left: 50px;
+    top: 900px;
+    padding:0 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 800px;
+    line-height: 938px;
+    letter-spacing: 0.12em; 
+    color:#1E1E1E;
+    text-shadow: 2px 0 #2FB814, -2px 0 #2FB814, 0 2px #2FB814, 0 -2px #2FB814,
+             1px 1px #2FB814, -1px -1px #2FB814, 1px -1px #2FB814, -1px 1px #2FB814;  
+    transform: rotate(-90deg);
+}

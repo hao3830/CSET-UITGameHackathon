@@ -8,15 +8,20 @@
     background: #272424;
     justify-content: center;
     align-items: center;
-    position:fixed;
+
+    position: fixed;
+
+
 }
 
 .img_header {
     position: absolute;
-    width: 7.32%;
-    height: 90%;
-    left: 5.66%;
-    top: 0px;
+width: 85px;
+height: 55px;
+left: 100px;
+top: 13px;
+
+background: url(../source/logo.png);
 
 }
 

@@ -1,0 +1,63 @@
+.end {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    left: 0px;
+    top: 2232px;
+    color: green;
+    background-color: #272424;
+}
+
+.end_logo {
+    font-size: 100px;
+    width: 1395px;
+    height: 1225px;
+    left: 1000px;
+    top: 2281px;
+    background:  url(../source/logo.png);
+    background-repeat: no-repeat;
+}
+
+.end_button {
+    display: flex;
+    margin-top:200px;
+    flex-direction: row;
+    text-align: centers;
+    font-size: 30px;
+
+
+    border-bottom: solid 1px white;
+}
+
+.end_button a {
+    margin: 5px 5px;
+}
+.end_contact {
+    margin-top:10px;
+    
+}
+.end_gach1 {
+    position: absolute;
+    width: 767px;
+    height: 119px;
+    left: 683px;
+    top: 2599.54px;
+    
+    background: #0D5000;
+    transform: rotate(-37.09deg);
+    
+}
+.end_gach2 {
+    position: absolute;
+    width: 767px;
+    height: 119px;
+    left: 893px;
+    top: 2709.54px;
+    
+    background: #0D5000;
+    transform: rotate(-37.09deg);
+}

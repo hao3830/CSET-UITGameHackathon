@@ -1,0 +1,85 @@
+.part {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.part_left p {
+    position: absolute;
+    width: 295px;
+    height: 201px;
+    left: 152px;
+    top: 1899px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.part_center p {
+
+    position: absolute;
+    width: 295px;
+    height: 201px;
+    left: 592px;
+    top: 1899px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.part_right p {
+    position: absolute;
+    width: 295px;
+    height: 201px;
+    left: 1012px;
+    top: 1899px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.part_img1 {
+    position: absolute;
+    Width: 28.11px;
+    Height: 21.62px; 
+    top: 1821.16px; 
+    Left: 157.97px ;
+    background: url(../source/Group\ 11.png);
+    background-repeat: no-repeat;
+}
+
+.part_img2 {
+    position: absolute;
+    left: 40.49%;
+    right: 53.96%;
+    top: 71.16%;
+    bottom: 25.64%;
+    background: url(../source/Group\ 13.png);
+    background-repeat: no-repeat;
+}
+
+.part_img3 {
+    position: absolute;
+    left: 69.65%;
+    right: 27.15%;
+    top: 72.8%;
+    bottom: 25.6%;
+
+    background: url(../source/Group\ 14.png);
+    background-repeat: no-repeat;
+}
