@@ -4,7 +4,8 @@ export default function What() {
         <div className={Style.what}>
             <div className={Style.what_left}>
                 <h1>What is this App?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Ut massa nisl pulvinar id ac volutpat. Arcu auctor fusce tincidunt quis diam risus nisl platea ipsum. Suspendisse scelerisque turpis quis sed etiam fames quis. Praesent vestibu</p>
+                <p>This app will provide cleaning missions for your habitat.
+You will be paired with others into teams to complete missions. When completing missions, you will receive special incentives that can be applied to your life.</p>
             </div>
             <div className={Style.what_right}>
                 <div className={Style.what_right_box1}>

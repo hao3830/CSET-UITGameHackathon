@@ -4,8 +4,10 @@ export default function Start() {
     return (
         <div className={Style.start}>
             <div className={Style.start_left}>
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Ut massa nisl pulvinar id ac volutpat. Arcu auctor fusce tincidunt quis diam risus nisl platea ipsum. Suspendisse scelerisque turpis quis sed etiam fames quis. Praesent vestibu</p>
+                <h1>Go green</h1>
+                <p>Let's go to be a green person.
+You will be connected with others to create a green community.
+Together we will create a green Earth.</p>
                 <a href="">Start</a>
                 <div className={Style.start_right}>
                 <div className={Style.start_right_top}></div>

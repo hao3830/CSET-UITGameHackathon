@@ -11,8 +11,11 @@ export default function Funct() {
                 </div>
             </div>
             <div className={Style.funct_right}>
-                <h1>fUNCTIONS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur. Ut massa nisl pulvinar id ac volutpat. Arcu auctor fusce tincidunt quis diam risus nisl platea ipsum. Suspendisse scelerisque turpis quis sed etiam fames quis. Praesent vestibu</p>
+                <h1>Benefit</h1>
+                <p>Great experiences <br></br>
+Improve the quality of living environment <br></br>
+Convenience offers <br></br>
+Good relationships</p>
             </div>
         </div>
     )
