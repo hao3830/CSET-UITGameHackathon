@@ -16,7 +16,7 @@ export default function Homepage({setUser, user})
     return(
         <div className={Style.main}>
             <p className={Style.main_chunen}>CSET</p>
-            <HeaderPage setIsLogin={setIsLogin} setIsRegis={setIsRegis} />;
+            <HeaderPage user={user} setIsLogin={setIsLogin} setIsRegis={setIsRegis} />;
             <Start user={user} setIsLogin={setIsLogin} />;
             <What />;
             <Funct />;
