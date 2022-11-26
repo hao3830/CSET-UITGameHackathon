@@ -1,7 +1,8 @@
 .top20 {
     height: 655px;
-    width: 1076px;
-    background: #FFFFFF;
+    width: 97%;
+    /* background: #FFFFFF; */
+    background: url('../public/tree3.jpg');
     border-radius: 25px;
     border: solid 30px #2FB814;
 }
@@ -12,7 +13,7 @@
     background: #D9D9D9;
     text-align: center;
     justify-content: center;
-    width: 929px;
+    width: 92%;
     height: 67px;
     margin: 46px 30px 5px 40px;
     font-family: 'Roboto';
@@ -28,10 +29,10 @@
 .top20_tieuchi {
     display:flex;
     justify-content:space-between;
-    width: 928px;
+    width: 92%;
 height: 44px;
 
-    border-radius: 16px;
+    border-radius: 32px;
 background: #D9D9D9;
 margin: 0px 30px 5px 40px;
 color: #2FB814;
@@ -71,6 +72,7 @@ margin: 0px 45px 5px 40px;
 display:flex;
 justify-content: space-between;
 height: 62.65px;
+width: 92%;
 }
 .top20_info_left {
     display:flex;

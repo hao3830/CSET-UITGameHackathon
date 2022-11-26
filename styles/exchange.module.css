@@ -1,0 +1,39 @@
+.exchange {
+    height: 655px;
+    width: 1076px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: solid 30px #2FB814;
+    color: black;
+    padding: 80px;
+}
+.diem {
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+.diem p{
+    padding: 0 12px 0 12px;
+}
+.checkbox{
+    display: flex;
+    font-size: 24px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px;
+}
+.checkbox p{
+    padding: 0 32px 0 32px;
+}
+.checkbox_check{
+    display: flex;
+    background-color:#eee;
+    height: 40px;
+    width: 40px;
+}
+.btn{
+    height: 65px;
+    width: 243px;
+    border-radius: 16px;
+    background-color: #d9d9d9;
+}

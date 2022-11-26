@@ -3,10 +3,12 @@
     justify-content: center;
     z-index: 2;
     justify-content: space-between;
+    margin-top:50px;
 }
 .start_left {
     margin-right: 56px;
     justify-content: center;
+    margin-top:50px;
 }
 
 .start_left a {
