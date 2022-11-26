@@ -25,7 +25,7 @@
 //               <th>STT</th>
 //               <th>POSITION</th>
 //               <th></th>
-//               <th>Dates of assignments</th>
+//               <th>STATUS</th>
 //             </tr>
 //           </thead>
 //           <tbody>
@@ -40,11 +40,10 @@
 //                       {item.mission_time.replace("T", " ")}
 //                     </td>
 //                     <td
-//                       className={`text-green-500  ${
-//                         !taskStatus.find((item) => item == idx)
-//                           ? "hover:cursor-pointer"
-//                           : " opacity-50"
-//                       }`}
+//                       className={`text-green-500  ${!taskStatus.find((item) => item == idx)
+//                         ? "hover:cursor-pointer"
+//                         : " opacity-50"
+//                         }`}
 //                       onClick={(e) => {
 //                         if (taskStatus.find((item) => item == idx)) return;
 //                         handleInsertJoiner({
@@ -70,38 +69,64 @@
 
 // export default TaskBoard;
 
+
+import { useEffect, useState } from "react";
+import { getNoneCompleteMission, handleInsertJoiner } from "../../APIs/mission";
+
 import Style from '../../styles/taskboard.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
 export default function Taskboard() {
-    return (
-        <div className={Style.top20}>
-            <div className={Style.top20_header}>
-                <p>TASKBOARD</p>
-            </div>
-            <div className={Style.top20_tieuchi}>
-                <div className={Style.top20_tieuchi_left}>
-                    <h1><AiOutlineCaretDown /></h1>
-                    <div className={Style.seperator}></div>
-                    <p>POSITION</p>
-                </div>
+  const [missions, setMissions] = useState();
+  const [taskStatus, setTaskStatus] = useState([]);
+  const handleGetNoneCompleteMission = async () => {
+    const respone = await getNoneCompleteMission({ user_id: user._id });
+    if (respone) setMissions(respone);
+  };
 
-                <p>JOINER</p>
-            </div>
-            <div className={Style.top20_info}>
+  useEffect(() => {
+    handleGetNoneCompleteMission();
+  }, []);
+  return (
+    <div className={Style.top20}>
+      <div className={Style.top20_header}>
+        <p>TASKBOARD</p>
+
+      </div>
+      <div className={Style.top20_tieuchi}>
+        <div className={Style.top20_tieuchi_left}>
+          <h1><AiOutlineCaretDown /></h1>
+          <div className={Style.seperator}></div>
+          <p>POSITION</p>
+        </div>
+
+        <p>JOINER</p>
+      </div>
+      {missions &&
+        missions.map((item, idx) => {
+          return (
+            <div>
+              <div className={Style.top20_info}>
                 <div className={Style.top20_info_left}>
-                    <h1><GoPrimitiveDot /></h1>
-                    <p>Điền tên task</p>
+                  <h1><GoPrimitiveDot /></h1>
+                  <p>{ `${item.location_desc}` }</p>
                 </div>
                 <div className={Style.top20_info_right}>
-                    <p>5/5</p>
-                    <a href="">JOIN</a>
+                  <p>5/5</p>
+                  <a href="">JOIN</a>
+                   
+                     
                 </div>
+              </div>
 
 
-            </div>
-            
-            
-        </div>
-    )
+
+
+            </div>);
+        })}
+    </div>
+
+
+
+  )
 }
