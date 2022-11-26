@@ -71,26 +71,42 @@
 
 
 }
-.start_right {
-   
-}
-.start_right_top{
+
+.start_right_top {
     position: absolute;
 width: 42.36%;
 height: 422px;
 left: 50.69%;
 top: 200px;
-
-background: #FFFFFF;
+color:white;
 border-radius: 32px;
-color:black;
-}
-.start_right_dot{
-   
-    color:white;
-    position: absolute;
-    margin-top:600px;
-    display: flex;
-    margin-left:20%;
+
 }
 
+.start_right_top img {
+    
+left: 50.69%;
+top: 200px;
+color:white;
+border-radius: 32px;
+}
+
+.btn {
+   text-align: center;
+}
+
+.btnye:hover {
+    color: green;
+    font-size:150%;
+}
+
+
+.start_left a:hover {
+    /* background-color: rgb(43, 255, 0); */
+    opacity: .7;
+}
+
+.btndoi {
+    color: green;
+    font-size:150%;
+}

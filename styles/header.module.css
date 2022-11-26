@@ -18,12 +18,12 @@
 .img_header {
    
     position: absolute;
-    width: 85px;
-    height: 55px;
+    width: 90px;
+    height: 80px;
     left: 100px;
-    top: 13px;
+    top: 1px;
 
-    background: url('../source/logo_header.png');
+    background: url('../source/gogreen.png');
 
 }
 
@@ -55,7 +55,13 @@
     color: #D9D9D9;
 
 }
-
+.setSignup:hover {
+    text-decoration: underline;
+}
+.setLogin:hover {
+    text-decoration: underline;
+    opacity: .7;
+}
 .setLogin {
     box-sizing: border-box;
 

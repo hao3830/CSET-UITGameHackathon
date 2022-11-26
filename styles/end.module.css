@@ -24,7 +24,7 @@ padding: 24px 0 24px 0;
     height: 25%;
     left:7%;
  
-    background: url('../source/logo.png');
+    background: url('../source/gogreen.png');
     background-repeat: no-repeat;
     background-position: 100%;
     background-size: 100%;
@@ -42,6 +42,8 @@ padding: 24px 0 24px 0;
     padding-bottom:2px;
     margin-top:13%;
 }
+
+
 .end_contact {
 
     font-size: 100%;
