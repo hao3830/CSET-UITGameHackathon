@@ -8,6 +8,7 @@ export default function Home() {
     userName: "",
     password: "",
     email: "",
+    _id: -1,
   });
 
   const [currPage, setCurrPage] = useState("");
