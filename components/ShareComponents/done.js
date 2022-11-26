@@ -30,15 +30,22 @@ export default function Done({userLogin}) {
                     <p>STATUS</p>
                 </div>
             </div>
-            <div className={Style.top20_info}>
+            {
+                doneList && doneList.map((item, idx) => {
+                    return (
+                        <div className={Style.top20_info}>
                 <div className={Style.top20_info_left}>
                     <h1><GoPrimitiveDot /></h1>
-                    <p>Nhà văn hóa sinh viên</p>
+                    <p>{`${item.location_desc}`}</p>
                 </div>
                 <div className={Style.top20_info_right}>
                     <p>DONE</p>
                 </div>
             </div>
+                    );
+                })
+            }
+            
         </div>
     )
 }
