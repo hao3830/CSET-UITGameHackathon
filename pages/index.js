@@ -3,6 +3,7 @@ import Homepage from "../components/HomePage/index";
 import MissionPage from "../components/MissionPage";
 import TaskBoardPage from "../components/MissionPage/taskboard";
 import PendingPage from "../components/MissionPage/pending";
+import DonePage from "../components/MissionPage/done";
 export default function Home() {
   const [user, setUser] = useState({
     userName: "",
@@ -43,6 +44,15 @@ export default function Home() {
           currPage={currPage}
         />
       )}
+      {
+        currPage == "DONE" && (
+          <DonePage
+            setUser={setUser}
+            user={user}
+            setCurrPage={setCurrPage}
+            currPage={currPage}
+          />)
+      }
     </div>
   );
 }

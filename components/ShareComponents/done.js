@@ -1,7 +1,20 @@
 import Style from '../../styles/done.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
-export default function Done() {
+import { useEffect, useState } from 'react'
+import { handleGetDoneTask } from '../../APIs/mission'
+export default function Done({userLogin}) {
+    const [doneList, setDoneList] = useState()
+    const handleGetPendingData = async () => {
+        const respone = await handleGetDoneTask({ user_id: userLogin._id });
+        console.log(respone)
+        if (respone) setDoneList(respone);
+      };
+
+      useEffect(()=> {
+        handleGetPendingData()
+      },[])
+
     return (
         <div className={Style.top20}>
             <div className={Style.top20_header}>
@@ -20,7 +33,7 @@ export default function Done() {
             <div className={Style.top20_info}>
                 <div className={Style.top20_info_left}>
                     <h1><GoPrimitiveDot /></h1>
-                    <p>Điền tên vô đây</p>
+                    <p>Nhà văn hóa sinh viên</p>
                 </div>
                 <div className={Style.top20_info_right}>
                     <p>DONE</p>

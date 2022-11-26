@@ -1,5 +1,3 @@
-// import { useEffect, useState } from "react";
-// import { getNoneCompleteMission, handleInsertJoiner } from "../../APIs/mission";
 
 // const TaskBoard = ({ user }) => {
 //   const [missions, setMissions] = useState();
@@ -76,7 +74,7 @@ import { getNoneCompleteMission, handleInsertJoiner } from "../../APIs/mission";
 import Style from '../../styles/taskboard.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
-export default function Taskboard() {
+export default function Taskboard({user}) {
   const [missions, setMissions] = useState();
   const [taskStatus, setTaskStatus] = useState([]);
   const handleGetNoneCompleteMission = async () => {
@@ -100,7 +98,7 @@ export default function Taskboard() {
           <p>POSITION</p>
         </div>
 
-        <p>JOINER</p>
+        <p>Date Assigned</p>
       </div>
       {missions &&
         missions.map((item, idx) => {
@@ -112,10 +110,20 @@ export default function Taskboard() {
                   <p>{ `${item.location_desc}` }</p>
                 </div>
                 <div className={Style.top20_info_right}>
-                  <p>5/5</p>
-                  <a href="">JOIN</a>
-                   
-                     
+                  <p >{item.mission_time.replace('T', ' ')}</p>
+                  <a  
+                  className={`${taskStatus.find((item) => item == idx) == undefined? '':'opacity-50'}`}
+                  onClick={(e)=> {
+                    e.preventDefault()
+                    if (taskStatus.find((item) => item == idx) ) return;
+                        handleInsertJoiner({
+                          user_id: user._id,
+                          mission_id: item._id,
+                        });
+                        setTaskStatus([...taskStatus, idx]);
+                  }}> {taskStatus.find((item) => item == idx) == undefined
+                                            ? "JOIN"
+                                            : "JOINED"}</a>
                 </div>
               </div>
 

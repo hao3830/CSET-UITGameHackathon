@@ -122,7 +122,9 @@ const PendingBoard = ({ userLogin }) => {
                         <p>pending</p>
                     <p    onClick={() => {
                         handleReportCompletedTask()
-                      }}>CONFIRM</p>
+                      }}
+                      className="hover:cursor-pointer"
+                      >CONFIRM</p>
                     </div>
                 </div>
                 );
