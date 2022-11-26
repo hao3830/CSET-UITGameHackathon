@@ -97,18 +97,19 @@ export default function Taskboard({user}) {
           <div className={Style.seperator}></div>
           <p>POSITION</p>
         </div>
-
+        <p>Task score</p>
         <p>Date Assigned</p>
       </div>
       {missions &&
         missions.map((item, idx) => {
-          return (
+          return ( 
             <div>
               <div className={Style.top20_info}>
                 <div className={Style.top20_info_left}>
                   <h1><GoPrimitiveDot /></h1>
                   <p>{ `${item.location_desc}` }</p>
                 </div>
+                <p>{`${item.misson_score}`}</p>
                 <div className={Style.top20_info_right}>
                   <p >{item.mission_time.replace('T', ' ')}</p>
                   <a  
