@@ -109,7 +109,7 @@ export default function Taskboard({user}) {
                   <h1><GoPrimitiveDot /></h1>
                   <p>{ `${item.location_desc}` }</p>
                 </div>
-                <p>{`${item.misson_score}`}</p>
+                <p>{`${item.mission_score}`}</p>
                 <div className={Style.top20_info_right}>
                   <p >{item.mission_time.replace('T', ' ')}</p>
                   <a  href=""
