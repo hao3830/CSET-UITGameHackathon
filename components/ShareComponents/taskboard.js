@@ -112,7 +112,7 @@ export default function Taskboard({user}) {
                 <p>{`${item.misson_score}`}</p>
                 <div className={Style.top20_info_right}>
                   <p >{item.mission_time.replace('T', ' ')}</p>
-                  <a  
+                  <a  href=""
                   className={`${taskStatus.find((item) => item == idx) == undefined? '':'opacity-50'}`}
                   onClick={(e)=> {
                     e.preventDefault()
