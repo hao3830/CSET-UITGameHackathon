@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    z-index: 100;
+    width:1000px;
+    height: 800px;
 }
 
 .login_container {

@@ -5,25 +5,44 @@ import { toast } from "react-toastify";
 import { getLogin } from "../../APIs/user";
 import Loading from "../ShareComponents/loading";
 
-const Login = () => {
+const Login = ({ setIsLogin, setUser }) => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [isPending, setIsPending] = useState(false);
 
   const handleLogin = async () => {
     setIsPending(true);
+    if (!userName) {
+        toast.error("Please fill username")
+        return
+    }
+    if (!password) {
+        toast.error("Please fill password")
+        return
+    } 
     const respone = await getLogin({
       userName: userName,
       password: password,
     });
     if (respone) {
       toast.success("Login Success");
-      
+      setIsLogin(false);
+      setUser({
+        userName: respone.name,
+        password: respone.password,
+        email: respone.email,
+      })
     }
+    setPassword("");
+    setUserName("");
     setIsPending(false);
   };
   return (
-    <div className={styles.login}>
+    <div className=" fixed top-0 left-0 align-middle flex justify-center z-50 w-screen h-screen items-center ">
+      <div
+        className="w-full h-full bg-black opacity-50 absolute top-0 left-0 hover:cursor-pointer"
+        onClick={() => setIsLogin(false)}
+      ></div>
       <div className={styles.login_container}>
         <div className={styles.login_close}>
           <FaRegWindowClose />
@@ -45,7 +64,7 @@ const Login = () => {
           ></input>
 
           <input
-            type="text"
+            type="password"
             className={styles.login_input}
             value={password}
             onChange={(e) => {

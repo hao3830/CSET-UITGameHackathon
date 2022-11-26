@@ -1,7 +1,7 @@
 .start {
     display: flex;
     justify-content: center;
-
+    width:100%;
 }
 .start_left {
     justify-content: center;
@@ -10,9 +10,13 @@
 }
 
 
-
+.start_left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .start_left h1 {
-    display: inline-block;
+
     position: absolute;
     width: 39.3%;
     height: 110px;
