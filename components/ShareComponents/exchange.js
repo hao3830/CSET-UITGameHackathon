@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Style from "../../styles/exchange.module.css";
 import { handleChangeItem, getLogin } from "../../APIs/user";
 
@@ -32,6 +32,25 @@ export default function Exchange({ userLogin, setUser }) {
       }
     }
   };
+  const handlLogin = async () => {
+    const res = await getLogin({
+      userName: userLogin.userName,
+      password: userLogin.password,
+    });
+    if (res) {
+      setUser({
+        userName: res.name,
+        password: res.password,
+        email: res.email,
+        _id: res._id,
+        score: res.score,
+      });
+    }
+  }
+  
+  useEffect(()=> {
+    handlLogin()
+  },[])
 
   return (
     <div className={Style.exchange}>
