@@ -1,6 +1,7 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import PendingBoard from "../ShareComponents/pending_board";
+import styles from "../../styles/fix_task.module.css"
 
 const PendingPage =  ({ setUser, user, setCurrPage, currPage }) => {
   return (
@@ -12,7 +13,7 @@ const PendingPage =  ({ setUser, user, setCurrPage, currPage }) => {
       >
         <HeaderPage user={user} setIsLogin={() => {}} setIsRegis={() => {}} />;
       </div>
-      <div className=" flex  h-full">
+      <div className={styles.fix}>
         <div className="w-1/6">
           <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
         </div>
