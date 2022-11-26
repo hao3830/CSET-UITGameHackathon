@@ -10,7 +10,7 @@ You will be connected with others to create a green community.
 Together we will create a green Earth.</p>
                 <a href="" onClick={(e)=> {
                     e.preventDefault()
-                    if(!user.name) {
+                    if(!user.userName) {
                         setIsLogin(true)
                     }
                 }}>Start</a>
