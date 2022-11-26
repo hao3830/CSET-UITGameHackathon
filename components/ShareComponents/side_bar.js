@@ -1,6 +1,7 @@
 import Pages from '../../components/Constant/index'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import styles from "../../styles/fix_task.module.css"
 
 const items = [
   {
@@ -19,13 +20,17 @@ const items = [
     label: 'DONE',
     href: Pages.done,
   },
+  {
+    label: 'GIFT',
+    href: Pages.done,
+  },
 ]
 
 const Sidebar = ({setCurrPage, currPage}) => {
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-xl bg-base-300 p-2 text-base font-semibold text-white shadow-md">
-      <ul className="space-y-2">
+    <div className="relative w-full h-full overflow-hidden rounded-xl bg-base-300 p-2 text-base font-semibold text-white shadow-md rounded-none" >
+      <ul className={styles.fix_side_menu}>
         {items.map((item, index) => (
           <li key={index} className="w-full">
               <span
@@ -40,7 +45,7 @@ const Sidebar = ({setCurrPage, currPage}) => {
           </li>
         ))}
       </ul>
-      <p className="absolute bottom-2 w-full text-center text-sm">
+      <p className={styles.fix_side_footer}>
         Copyright © 2022 CSET - UITGameHackathon
       </p>
     </div>
