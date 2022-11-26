@@ -24,9 +24,17 @@ const items = [
     label: 'GIFT',
     href: Pages.done,
   },
+  // {
+  //   label: 'GIFT-BOARD',
+  //   href: Pages.done,
+  // },
+  // {
+  //   label: 'CAMERA',
+  //   href: Pages.done,
+  // },
 ]
 
-const Sidebar = ({setCurrPage, currPage}) => {
+const Sidebar = ({setCurrPage, currPage, user}) => {
 
   return (
     <div className="relative w-full h-full overflow-hidden rounded-xl bg-base-300 p-2 text-base font-semibold text-white shadow-md rounded-none" >

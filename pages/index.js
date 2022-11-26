@@ -64,6 +64,24 @@ export default function Home() {
             currPage={currPage}
           />)
       }
+      {
+        currPage == "GIFT-BOARD" && user.userName =='admin'  && (
+          <GiftPage
+            setUser={setUser}
+            user={user}
+            setCurrPage={setCurrPage}
+            currPage={currPage}
+          />)
+      }
+      {
+        currPage == "CAMERA" && user.userName =='admin'  && (
+          <GiftPage
+            setUser={setUser}
+            user={user}
+            setCurrPage={setCurrPage}
+            currPage={currPage}
+          />)
+      }
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function GiftPage({ setUser, user, setCurrPage, currPage }) {
           </div>
           <div className=" flex  h-full">
             <div className="w-1/6">
-              <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
+              <Sidebar setCurrPage={setCurrPage} currPage={currPage} user={user} />
             </div>
             <div className=" w-5/6 p-2">
               <Exchange userLogin={user} setUser={setUser} />

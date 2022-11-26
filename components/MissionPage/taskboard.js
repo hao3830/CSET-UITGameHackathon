@@ -19,7 +19,7 @@ const TaskBoardPage = ({ setUser, user, setCurrPage, currPage }) => {
       </div>
       <div className={styles.fix}>
         <div className="w-1/6">
-          <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
+          <Sidebar setCurrPage={setCurrPage} currPage={currPage} user={user} />
         </div>
         <div className={Style.bg_full}>
           <TaskBoard user={user} />
