@@ -74,7 +74,7 @@ const Register = ({ setIsRegis, setUser }) => {
       <div className={styles.creater_container}>
       <img className={styles.login_img} src={'gogreen.png'}></img>
         <div className={styles.creater_close}>
-          <FaRegWindowClose />
+          {/* <FaRegWindowClose /> */}
         </div>
         <header className={styles.creater_header}>
           <span>creater an</span>
