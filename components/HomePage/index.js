@@ -17,7 +17,7 @@ export default function Homepage({setUser, user, setCurrPage})
         <div className={Style.main1}>
             
             <div className={Style.main}>
-            <p className={Style.main_chunen}>CSET</p>
+            <p className={Style.main_chunen}></p>
             <HeaderPage user={user} setIsLogin={setIsLogin} setIsRegis={setIsRegis} />
             <Start user={user} setIsLogin={setIsLogin} setCurrPage={setCurrPage} />
             <What />

@@ -3,7 +3,7 @@ export default function HeaderPage({ user, setIsLogin, setIsRegis }) {
   return (
     <div className={Style.header_bar}>
       <p className={Style.img_header}>
-        <a href=""><img href="" src="/gogreen.png"></img></a>
+        <a ><img href="" src="/gogreen.png"></img></a>
       </p>
       {user.userName ? (
         <span className=" text-white text-lg pr-32">
@@ -11,8 +11,7 @@ export default function HeaderPage({ user, setIsLogin, setIsRegis }) {
         </span>
       ) : (
         <div className={Style.signup_login}>
-          <a
-            href=""
+          <a href=""
             className={Style.setSignup}
             onClick={(e) => {
               e.preventDefault();
