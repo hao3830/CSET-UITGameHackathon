@@ -13,9 +13,9 @@ export default function Funct() {
             <div className={Style.funct_right}>
                 <h1>Benefit</h1>
                 <p>Great experiences <br></br>
-                    Improve the quality of living environment <br></br>
+                    Good relationships <br></br>
                     Convenience offers <br></br>
-                    Good relationships</p>
+                    Improve the quality of living environment</p>
             </div>
         </div>
     )

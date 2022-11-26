@@ -1,79 +1,49 @@
 .part {
     display: flex;
-    justify-content: space-between;
-    
 }
 
-.part_left p {
-
-    width: 295px;
-    height: 130px;
-    left: 152px;
-
-
+.part_menu {
+    width: calc(100%/3);
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-
     color: #FFFFFF;
 }
 
-.part_center p {
-
-    width: 295px;
-    height: 130px;
-    left: 592px;
-    top: 1899px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #FFFFFF;
-}
-
-.part_right p {
-    width: 295px;
-    height: 130px;
-    left: 1012px;
-    top: 1899px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #FFFFFF;
+.part_content {
+    padding: 0 4px;
 }
 
 .part_img1 {
-    Width: 28.11px;
-
-    Left: 157.97px ;
+    height: 130px;
     background: url(../source/Group\ 11.png);
     background-repeat: no-repeat;
 }
 
 .part_img2 {
-    left: 40.49%;
-    right: 53.96%;
-
-    bottom: 25.64%;
+    height: 130px;
     background: url(../source/Group\ 13.png);
     background-repeat: no-repeat;
 }
 
 .part_img3 {
-    left: 69.65%;
-    right: 27.15%;
-
-    bottom: 25.6%;
-
+    height: 130px;
     background: url(../source/Group\ 14.png);
     background-repeat: no-repeat;
+}
+
+@media (max-width: 739px){
+    .part_img1,
+    .part_img2,
+    .part_img3 {
+        background-size: 50px;
+        height: 70px;
+    }
+
+    .part_content {
+        font-size: 10px;
+    }
+
 }

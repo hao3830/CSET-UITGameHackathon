@@ -11,12 +11,9 @@
     align-items: center;
     z-index: 10;
     position: fixed;
-
-
 }
 
 .img_header {
-   
     position: absolute;
     width: 90px;
     height: 80px;
@@ -71,4 +68,23 @@
     text-align: center;
     border: 3px solid #2D9318;
     border-radius: 16px;
+}
+
+@media (max-width: 739px){
+    .img_header {
+        left: 50px;
+    }
+
+    .setLogin {
+        width: 60px;
+        height: 30px;
+        left: 82%;
+        top: 26.6px;
+        font-size: 14px;
+    }
+
+    .setSignup {
+        left: 65%;
+        width: auto;
+    }
 }

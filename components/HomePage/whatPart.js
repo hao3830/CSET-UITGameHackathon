@@ -8,12 +8,8 @@ export default function What() {
 You will be paired with others into teams to complete missions. When completing missions, you will receive special incentives that can be applied to your life.</p>
             </div>
             <div className={Style.what_right}>
-                <div className={Style.what_right_box1}>
-
-                </div>
-                <div className={Style.what_right_box2}>
-
-                </div>
+                <div className={Style.what_right_box1}></div>
+                <div className={Style.what_right_box2}></div>
             </div>
         </div>
     )
