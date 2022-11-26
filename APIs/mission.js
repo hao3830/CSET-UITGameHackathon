@@ -18,10 +18,9 @@ const getNoneCompleteMission = async ({ user_id }) => {
 
     if (data.code != 1000) {
       console.log(data);
-      toast.error("Wrong username or password");
+      toast.error("Database have errror");
       return false;
     }
-    console.log(data.missions);
     return data.missions;
   } catch (error) {
     console.log(error);
@@ -124,9 +123,39 @@ const handleReportCompletedTask = async ({ user_id, mission_id }) => {
   }
 };
 
+const handleGetDoneTask = async ({user_id}) => {
+  try {
+    const response = await axios.get("/mission/done", {
+      params: {
+        user_id: user_id,
+      },
+    });
+
+    if (response.status != 200) {
+      toast.error("Have error when get data, please try again");
+      return false;
+    }
+
+    const data = response.data;
+
+    if (data.code != 1000) {
+      console.log(data);
+      toast.error("Error in database");
+      return false;
+    }
+
+    return data.missions;
+  } catch (error) {
+    console.log(error);
+    toast.error("Have error when get data, please try again");
+    return false;
+  }
+}
+
 export {
   getNoneCompleteMission,
   handleInsertJoiner,
   getUserPendingList,
   handleReportCompletedTask,
+  handleGetDoneTask
 };

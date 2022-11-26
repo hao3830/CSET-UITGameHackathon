@@ -58,11 +58,24 @@
 // };
 
 // export default ScoreBoard;
+import { useEffect, useState } from "react";
+import { getTop20User } from "../../APIs/user";
 
 import Style from '../../styles/top20.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
-export default function Top20() {
+const ScoreBoard = ({ userLogin }) => {
+    const [users, setUsers] = useState();
+  
+    const handleGetTop20User = async () => {
+      const response = await getTop20User();
+  
+      setUsers(response);
+    };
+  
+    useEffect(() => {
+      handleGetTop20User();
+    }, []);
     return (
         <div className={Style.top20}>
             <div className={Style.top20_header}>
@@ -77,19 +90,27 @@ export default function Top20() {
 
                 <p>Points</p>
             </div>
-            <div className={Style.top20_info}>
-                <div className={Style.top20_info_left}>
-                    <h1><GoPrimitiveDot /></h1>
-                    <p>Điền tên vô đây</p>
-                </div>
-                <div className={Style.top20_info_right}>
-                    <p>1000</p>
-                    <p><img src="leaf.png"></img></p>
-                </div>
+            {users && users.map((item, idx) => {
+                return (
+                    <div className={Style.top20_info}>
+                        <div className={Style.top20_info_left}>
+                            <h1><GoPrimitiveDot /></h1>
+                            <p className={` ${item.name == userLogin.name && ' text-green-500'}`}>{item.name}</p>
+                        </div>
+                        <div className={Style.top20_info_right}>
+                            <p>{item.score}</p>
+                            <p><img src="leaf.png"></img></p>
+                        </div>
 
 
-            </div>
+                    </div>
+                );
+            })
+            }
             
+
         </div>
     )
 }
+
+export default ScoreBoard;

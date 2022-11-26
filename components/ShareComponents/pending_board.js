@@ -76,11 +76,24 @@
 // };
 
 // export default PendingBoard;
-
+import { useEffect, useState } from "react";
+import { getUserPendingList } from "../../APIs/mission";
+import { handleReportCompletedTask } from "../../APIs/mission";
 import Style from '../../styles/pending.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
-export default function Pending() {
+const PendingBoard = ({ userLogin }) => {
+    const [pendingData, setPendingData] = useState();
+  
+    const handleGetPendingData = async () => {
+      const respone = await getUserPendingList({ user_id: userLogin._id });
+  
+      if (respone) setPendingData(respone);
+    };
+  
+    useEffect(() => {
+      handleGetPendingData();
+    }, []);
     return (
         <div className={Style.top20}>
             <div className={Style.top20_header}>
@@ -93,21 +106,32 @@ export default function Pending() {
                     <p>POSITION</p>
                 </div>
                 <div className={Style.top20_tieuchi_right}>
-                    <p>JOINER</p>
                     <p>STATUS</p>
                 </div>
             </div>
-            <div className={Style.top20_info}>
-                <div className={Style.top20_info_left}>
-                    <h1><GoPrimitiveDot /></h1>
-                    <p>Điền tên vô đây</p>
+            {pendingData &&
+              pendingData.map((item, idx) => {
+                return (
+                    <div className={Style.top20_info}>
+                    <div className={Style.top20_info_left}>
+                        <h1><GoPrimitiveDot /></h1>
+                        <p>{item.location_desc}</p>
+                    </div>
+                    <div className={Style.top20_info_right}>
+
+                        <p>pending</p>
+                    <p    onClick={() => {
+                        handleReportCompletedTask()
+                      }}
+                      className="hover:cursor-pointer"
+                      >CONFIRM</p>
+                    </div>
                 </div>
-                <div className={Style.top20_info_right}>
-                    <p>5/5</p>
-                    <p>pending</p>
-                    <p>CONFIRM</p>
-                </div>
-            </div>
+                );
+              })}
+            
         </div>
     )
 }
+
+export default PendingBoard;
