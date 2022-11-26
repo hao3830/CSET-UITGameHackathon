@@ -1,6 +1,7 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import Exchange from "../ShareComponents/exchange";
+import Style from "../../styles/bg.module.css";
 export default function GiftPage({ setUser, user, setCurrPage, currPage }) {
     return (
         <div className=" flex flex-col h-screen w-screen">
@@ -15,7 +16,7 @@ export default function GiftPage({ setUser, user, setCurrPage, currPage }) {
             <div className="w-1/6">
               <Sidebar setCurrPage={setCurrPage} currPage={currPage} user={user} />
             </div>
-            <div className=" w-5/6 p-2">
+            <div className={Style.bg_full}>
               <Exchange userLogin={user} setUser={setUser} />
             </div>
           </div>
