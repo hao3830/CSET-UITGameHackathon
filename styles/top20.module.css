@@ -1,10 +1,12 @@
 .top20 {
-    height: 655px;
-    width: 97%;
-    /* background: #FFFFFF; */
-    background: url('../public/tree3.jpg');
+    height: 605px;
+    width: 70%;
+    background: rgba(250,250,250,0.5);
+    /* background: url(../public/tree3.jpg); */
     border-radius: 25px;
-    border: solid 30px #2FB814;
+    margin-left: 180px;
+    margin-top: 30px;
+    padding-top: 16px;
 }
 
 .top20_header {
@@ -127,4 +129,31 @@ color: #000000;
     height: 24px;
     width: 1px;
     background-color: #2FB814;
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .top20 {
+        margin-left: 90px;
+    }
+
+    .top20_header {
+        margin: 40px 0px 8px 22px;
+    }
+
+    .top20_tieuchi {
+        margin: 0px 0px 8px 22px;
+    }
+
+    .top20_tieuchi p {
+        padding-right: 108px;
+    }
+    
+    .top20_info {
+        margin: 0px 0px 8px 22px;
+        height: 42px;
+    }
+
+    .top20_info p {
+        padding-right: 90px;
+    }
 }

@@ -1,7 +1,11 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import Done from "../ShareComponents/done";
+
+import Style from "../../styles/bg.module.css";
+
 import styles from "../../styles/fix_task.module.css"
+
 
 export default function DonePage({ setUser, user, setCurrPage, currPage }) {
     return (
@@ -17,7 +21,7 @@ export default function DonePage({ setUser, user, setCurrPage, currPage }) {
             <div className="w-1/6">
               <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
             </div>
-            <div className=" w-5/6 p-2">
+            <div className={Style.bg_full}>
               <Done userLogin={user} />
             </div>
           </div>
