@@ -16,7 +16,7 @@ const MissionPage = ({ setUser, user, setCurrPage, currPage }) => {
           <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
         </div>
         <div className=" w-5/6 p-2">
-        <ScoreBoard userLogin={user} />
+          <ScoreBoard userLogin={user} />
         </div>
       </div>
     </div>

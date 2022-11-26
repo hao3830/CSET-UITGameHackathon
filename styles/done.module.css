@@ -2,9 +2,9 @@
     height: 655px;
     width: 97%;
     /* background: #FFFFFF; */
-    background: url('../public/tree3.jpg');
+    background-color: white;
     border-radius: 25px;
-    border: solid 30px #2FB814;
+    border: solid 30px white;
 }
 
 .top20_header {
