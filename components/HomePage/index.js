@@ -9,7 +9,7 @@ export default function Homepage()
 {
     return(
         <div className={Style.main}>
-            <p className={Style.main_chunen}>CSET</p>
+            <p className={Style.main_chunen}></p>
             <HeaderPage />;
             <Start />;
             <What />;
