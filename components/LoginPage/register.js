@@ -13,25 +13,35 @@ const Register = ({ setIsRegis, setUser }) => {
   const [isPending, setIsPending] = useState(false);
 
   const handleRegister = async () => {
-    setIsPending(true)
+    setIsPending(true);
     if (!userName) {
       toast.error("Please fill username");
+      setIsPending(false);
+
       return;
     }
     if (!email) {
       toast.error("Please fill email");
+      setIsPending(false);
+
       return;
     }
     if (!password) {
       toast.error("Please fill password");
+      setIsPending(false);
+
       return;
     }
     if (!confirm) {
       toast.error("Please fill confirm");
+      setIsPending(false);
+
       return;
     }
     if (password != confirm) {
       toast.error("Password not match!");
+      setIsPending(false);
+
       return;
     }
 
@@ -49,7 +59,7 @@ const Register = ({ setIsRegis, setUser }) => {
         email: respone.email,
       });
     }
-    setIsPending(false)
+    setIsPending(false);
   };
 
   return (

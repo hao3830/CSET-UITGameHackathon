@@ -1,6 +1,6 @@
 import Style from '../../styles/start.module.css'
 import { GoPrimitiveDot } from 'react-icons/go';
-export default function Start({user, setIsLogin}) {
+export default function Start({user, setIsLogin, setCurrPage}) {
     return (
         <div className={Style.start}>
             <div className={Style.start_left}>
@@ -12,7 +12,9 @@ Together we will create a green Earth.</p>
                     e.preventDefault()
                     if(!user.userName) {
                         setIsLogin(true)
+                        return
                     }
+                    setCurrPage('SCOREBOARD')
                 }}>Start</a>
                 <div className={Style.start_right}>
                 <div className={Style.start_right_top}></div>

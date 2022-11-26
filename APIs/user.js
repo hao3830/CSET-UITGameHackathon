@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import axios from './axios_instance'
+import axios from "./axios_instance";
 const getLogin = async ({ userName, password }) => {
   try {
     const response = await axios.get("/user", {
@@ -29,12 +29,12 @@ const getLogin = async ({ userName, password }) => {
   }
 };
 
-const getRegister = async ({userName, email, password})=> {
+const getRegister = async ({ userName, email, password }) => {
   try {
-    const formData = new FormData()
-    formData.append('user_name', userName)
-    formData.append('email', email)
-    formData.append('password', password)
+    const formData = new FormData();
+    formData.append("user_name", userName);
+    formData.append("email", email);
+    formData.append("password", password);
 
     const response = await axios.post("/user/register", formData);
 
@@ -57,6 +57,32 @@ const getRegister = async ({userName, email, password})=> {
     toast.error("Have error when get data, please try again");
     return false;
   }
-}
+};
 
-export { getLogin, getRegister };
+const getTop20User = async () => {
+  try {
+    const response = await axios.get("/user/list_user");
+
+    if (response.status != 200) {
+      toast.error("Have error when get data, please try again");
+      return false;
+    }
+
+    const data = response.data;
+
+    if (data.code != 1000) {
+      console.log(data);
+      toast.error("Error in database");
+      return false;
+    }
+    return data.users;
+  } catch (error) {
+    console.log(error);
+    toast.error("Have error when get data, please try again");
+    return false;
+  }
+};
+
+
+
+export { getLogin, getRegister, getTop20User };
