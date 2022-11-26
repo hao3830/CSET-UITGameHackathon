@@ -51,7 +51,7 @@ const Login = ({ setIsLogin, setUser }) => {
       <div className={styles.login_container}>
       <img className={styles.login_img} src={'gogreen.png'}></img>
         <div className={styles.login_close}>
-          <FaRegWindowClose />
+          {/* <FaRegWindowClose /> */}
         </div>
         <header className={styles.login_header}>
           <span className={styles.login_text}>welcome</span>
