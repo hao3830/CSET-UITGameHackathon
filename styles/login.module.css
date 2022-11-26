@@ -17,12 +17,18 @@
     background-color: #fff;
     max-width: calc(100% - 56px);
     width: 1000px;
-    height: 800px;
+    height: 650px;
     min-height: 300px;
     position: relative;
     animation: modalFaceIn ease-out 0.5s;
     border-radius: 64px;
 
+}
+
+.login_img {
+    position: absolute;
+    height: 100%;
+    width: 58%;
 }
 
 .login_close {

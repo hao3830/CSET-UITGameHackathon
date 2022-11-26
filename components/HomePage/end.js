@@ -4,21 +4,23 @@ import { AiOutlineMail, AiOutlineFacebook, AiOutlineYoutube, AiOutlineGithub } f
 export default function End() {
     return (
         <div className={Style.end}>
-            <div className={Style.end_background}>
-                
-            </div>
             <div className={Style.end_logo}>
-              
+                <a><img src={"gogreen.png"}></img></a>
             </div>
-            <div className={Style.end_button}>
+            <div className={Style.end_center}>
+                <div className={Style.end_button}>
                 <a href=""><AiOutlineMail /></a>
                 <a href=""><AiOutlineGithub /></a>
                 <a href=""><AiOutlineFacebook /></a>
                 <a href=""><AiOutlineYoutube /></a>
-            </div>
-            <div>
+                </div>
+
+                <div>
                 <p className={Style.end_contact}>CONTACT US</p>
+                </div>
             </div>
+            
+            <img src={"logo.png"} className={Style.end_img}></img>
         </div>
     )
 }

@@ -61,7 +61,7 @@ const Register = ({ setIsRegis, setUser }) => {
     }
     setIsPending(false);
   };
-
+  
   return (
     <div className={styles.creater}>
       <div
@@ -69,6 +69,7 @@ const Register = ({ setIsRegis, setUser }) => {
         onClick={() => setIsRegis(false)}
       ></div>
       <div className={styles.creater_container}>
+      <img className={styles.login_img} src={'gogreen.png'}></img>
         <div className={styles.creater_close}>
           <FaRegWindowClose />
         </div>

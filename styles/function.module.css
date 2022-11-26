@@ -1,34 +1,33 @@
 .funct {
     display:flex;
+    justify-content: space-between;
+    margin-top:150px;
+    margin-bottom:200px;
 }
 
 .funct_left_box1 {
-    position: absolute;
-    width: 21.87%;
+
+    width: 315px;
     height: 300px;
-    left: 9.09%;
-    top: 1340px;
-    
+
+  
     background: #2FB814;
 }
-.funct_left_box2 {
-    position: absolute;
-width: 21.87%;
-height: 300px;
-left: 21.87%;
-top: 1250px;
 
-background: #FFFFFF;
-}
+.funct_left_box2 {
+
+    width: 315px;
+    height: 300px;
+    margin-top:-150px;
+    margin-left:100px;
+    background: #FFFFFF;
+}  
 
 .funct_right h1 {
 
-    position: absolute;
-    width: 42.36%;
-    height: 73px;
-    right: 6.94%;
-    top: 1388px;
+
     
+    margin-top:100px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -42,12 +41,7 @@ background: #FFFFFF;
 }
 .funct_right p {
     
-position: absolute;
-width: 35.06;
-height: 100px;
-right: 6.94%;
-left: 57.98%;
-top: 1458px;
+
 
 font-family: 'Roboto';
 font-style: normal;

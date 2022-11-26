@@ -9,7 +9,7 @@ import { useState } from 'react'
 import Login from '../LoginPage/index.js'
 import Register from '../LoginPage/register.js'
 
-export default function Homepage({setUser, user , setCurrPage})
+export default function Homepage({setUser, user})
 {
     const [isLogin, setIsLogin] = useState(false);
     const [isRegis, setIsRegis] = useState(false);
@@ -17,7 +17,7 @@ export default function Homepage({setUser, user , setCurrPage})
         <div className={Style.main}>
             <p className={Style.main_chunen}>CSET</p>
             <HeaderPage user={user} setIsLogin={setIsLogin} setIsRegis={setIsRegis} />;
-            <Start user={user} setIsLogin={setIsLogin} setCurrPage={setCurrPage} />;
+            <Start user={user} setIsLogin={setIsLogin} />;
             <What />;
             <Funct />;
             <Part />;
