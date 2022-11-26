@@ -83,6 +83,34 @@ const getTop20User = async () => {
   }
 };
 
+const handleChangeItem = async ({type_gift, user_id}) => {
+  try {
+    const response = await axios.get("/user/get_a_avail_type_gift",{
+      params:{
+        type_gift:type_gift,
+        user_id:user_id
+      }
+    });
+
+    if (response.status != 200) {
+      toast.error("Have error when get data, please try again");
+      return false;
+    }
+
+    const data = response.data;
+
+    if (data.code != 1000) {
+      console.log(data);
+      toast.error("There No Gift");
+      return false;
+    }
+    return data.gifts;
+  } catch (error) {
+    console.log(error);
+    toast.error("Have error when get data, please try again");
+    return false;
+  }
+}
 
 
-export { getLogin, getRegister, getTop20User };
+export { getLogin, getRegister, getTop20User, handleChangeItem };

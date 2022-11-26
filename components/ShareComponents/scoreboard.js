@@ -92,7 +92,7 @@ const ScoreBoard = ({ userLogin }) => {
             </div>
             {users && users.map((item, idx) => {
                 return (
-                    <div className={Style.top20_info}>
+                    <div className={Style.top20_info} key={idx}>
                         <div className={Style.top20_info_left}>
                             <h1><GoPrimitiveDot /></h1>
                             <p className={` ${item.name == userLogin.name && ' text-green-500'}`}>{item.name}</p>

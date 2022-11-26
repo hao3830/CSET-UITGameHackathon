@@ -34,7 +34,8 @@ const Login = ({ setIsLogin, setUser }) => {
         userName: respone.name,
         password: respone.password,
         email: respone.email,
-        _id: respone._id
+        _id: respone._id,
+        score: respone.score
       });
     }
     setPassword("");

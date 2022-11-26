@@ -19,6 +19,10 @@ const items = [
     label: 'DONE',
     href: Pages.done,
   },
+  {
+    label: 'GIFT',
+    href: Pages.done,
+  },
 ]
 
 const Sidebar = ({setCurrPage, currPage}) => {
