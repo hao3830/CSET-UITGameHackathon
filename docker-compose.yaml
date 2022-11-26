@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  haov_uit_hackthon:
+    build: .
+    restart: always
+    container_name: haov_uit_hackthon
+    ports:
+      - 8004:3000
