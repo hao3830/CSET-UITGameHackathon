@@ -84,7 +84,7 @@ import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
 const PendingBoard = ({ userLogin }) => {
     const [pendingData, setPendingData] = useState();
-  
+    const [doneList, setDoneList] = useState([]);
     const handleGetPendingData = async () => {
       const respone = await getUserPendingList({ user_id: userLogin._id });
   
@@ -112,7 +112,7 @@ const PendingBoard = ({ userLogin }) => {
             {pendingData &&
               pendingData.map((item, idx) => {
                 return (
-                    <div className={Style.top20_info}>
+                    <div className={Style.top20_info} key={idx}>
                     <div className={Style.top20_info_left}>
                         <h1><GoPrimitiveDot /></h1>
                         <p>{item.location_desc}</p>
@@ -121,10 +121,15 @@ const PendingBoard = ({ userLogin }) => {
 
                         <p>pending</p>
                     <p    onClick={() => {
-                        handleReportCompletedTask()
+                    if (doneList.find((item) => item == idx) ) return;
+                        handleReportCompletedTask({
+                            user_id:userLogin._id,
+                            mission_id:item._id
+                        })
+                        setDoneList([...doneList, idx])
                       }}
-                      className="hover:cursor-pointer"
-                      >CONFIRM</p>
+                      className={`${doneList.find((item) => item == idx) == undefined? 'hover:cursor-pointer':'opacity-50'}`}
+                      >{doneList.find((item) => item == idx) == undefined? 'CONFIRMED':'CONFIRM'}</p>
                     </div>
                 </div>
                 );
