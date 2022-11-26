@@ -1,6 +1,7 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import Done from "../ShareComponents/done";
+import styles from "../../styles/fix_task.module.css"
 
 export default function DonePage({ setUser, user, setCurrPage, currPage }) {
     return (
@@ -12,7 +13,7 @@ export default function DonePage({ setUser, user, setCurrPage, currPage }) {
           >
             <HeaderPage user={user} setIsLogin={() => {}} setIsRegis={() => {}} />;
           </div>
-          <div className=" flex  h-full">
+          <div className={styles.fix}>
             <div className="w-1/6">
               <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
             </div>
