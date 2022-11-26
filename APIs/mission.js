@@ -110,11 +110,11 @@ const handleReportCompletedTask = async ({ user_id, mission_id }) => {
 
     if (data.code != 1000) {
       console.log(data);
-      toast.error("Error in database");
+      toast.error("Task Uncompleted");
       return false;
     }
 
-    toast.success("Sent & checking please wait a minutes");
+    toast.success("Task Completed");
     return true;
   } catch (error) {
     console.log(error);
