@@ -16,8 +16,18 @@
     background-size: 110%;
 }
 
+@media (min-width: 740px) and (max-width: 1023px){
+    .main1 {
+        background-size: 139%;
+    }
+}
+
 @media (max-width: 739px){
     .main {
         padding:100px 40px 40px 40px;
+    }
+
+    .main1 {
+        background-size: 195%;
     }
 }

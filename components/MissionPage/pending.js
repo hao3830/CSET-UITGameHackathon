@@ -16,7 +16,7 @@ const PendingPage =  ({ setUser, user, setCurrPage, currPage }) => {
         <div className="w-1/6">
           <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
         </div>
-        <div className=" w-5/6 p-2">
+        <div className=" w-5/6 p-2 ">
           <PendingBoard userLogin={user} />
         </div>
       </div>
