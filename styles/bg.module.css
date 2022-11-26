@@ -10,4 +10,5 @@
     width: 97%;
     padding: 8px;
     background: url('../public/bgpic_1.png');
+    background-repeat: no-repeat;
 }

@@ -1,12 +1,12 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import Done from "../ShareComponents/done";
-<<<<<<< HEAD
+
 import Style from "../../styles/bg.module.css";
-=======
+
 import styles from "../../styles/fix_task.module.css"
 
->>>>>>> 3d327adcb4f1f9630eae29088feed505821222c7
+
 export default function DonePage({ setUser, user, setCurrPage, currPage }) {
     return (
         <div className=" flex flex-col h-screen w-screen">

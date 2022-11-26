@@ -31,7 +31,7 @@
     width: 58%;
 }
 
-.login_close {
+/* .login_close {
     position: absolute;
     right: 0;
     top: 0;
@@ -41,7 +41,7 @@
     cursor: pointer;
     opacity: 0.7;
     font-size: 20px;
-}
+} */
 
 .login_close:hover {
     color: #2FB814;
