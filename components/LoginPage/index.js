@@ -44,6 +44,7 @@ const Login = ({ setIsLogin, setUser }) => {
         onClick={() => setIsLogin(false)}
       ></div>
       <div className={styles.login_container}>
+      <img className={styles.login_img} src={'gogreen.png'}></img>
         <div className={styles.login_close}>
           <FaRegWindowClose />
         </div>
