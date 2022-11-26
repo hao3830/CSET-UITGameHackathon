@@ -13,13 +13,16 @@ const Login = ({ setIsLogin, setUser }) => {
   const handleLogin = async () => {
     setIsPending(true);
     if (!userName) {
-        toast.error("Please fill username")
-        return
+      toast.error("Please fill username");
+      setIsPending(false);
+
+      return;
     }
     if (!password) {
-        toast.error("Please fill password")
-        return
-    } 
+      toast.error("Please fill password");
+      setIsPending(false);
+      return;
+    }
     const respone = await getLogin({
       userName: userName,
       password: password,
@@ -31,7 +34,8 @@ const Login = ({ setIsLogin, setUser }) => {
         userName: respone.name,
         password: respone.password,
         email: respone.email,
-      })
+        _id: respone._id
+      });
     }
     setPassword("");
     setUserName("");
