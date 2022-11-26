@@ -1,4 +1,6 @@
 .main {
+    top:0;
+    left:0;
     display:flex;
     padding: 80px 100px 80px 100px;
     flex-direction: column;
