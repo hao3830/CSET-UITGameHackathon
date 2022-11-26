@@ -10,6 +10,7 @@
     align-items: center;
     z-index: 10;
     position: fixed;
+    opacity: 0.6;
 }
 
 .img_header {
@@ -34,9 +35,9 @@
 .setSignup {
 
     position: absolute;
-    width: 3.97%;
+    width: 6%;
     height: 15px;
-    left: 72.62%;
+    left: 71%;
     top: 32px;
 
     font-family: 'Roboto';

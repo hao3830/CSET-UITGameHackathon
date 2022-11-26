@@ -15,6 +15,7 @@ export default function Homepage({setUser, user, setCurrPage})
     const [isRegis, setIsRegis] = useState(false);
     return(
         <div className={Style.main1}>
+            
             <div className={Style.main}>
             <p className={Style.main_chunen}>CSET</p>
             <HeaderPage user={user} setIsLogin={setIsLogin} setIsRegis={setIsRegis} />
@@ -27,6 +28,7 @@ export default function Homepage({setUser, user, setCurrPage})
             {isRegis && <Register setIsRegis={setIsRegis} setUser={setUser}/>}
             </div>
             <End />
+
         </div>
     )
 }

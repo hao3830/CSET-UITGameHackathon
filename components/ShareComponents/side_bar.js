@@ -16,7 +16,7 @@ const items = [
     href: Pages.pending,
   },
   {
-    label: 'Done',
+    label: 'DONE',
     href: Pages.done,
   },
 ]

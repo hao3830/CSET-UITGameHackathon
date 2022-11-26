@@ -1,0 +1,143 @@
+.top20 {
+    height: 655px;
+    width: 1076px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: solid 30px #2FB814;
+}
+
+.top20_header {
+    display: flex;
+    flex-direction: column;
+    background: #D9D9D9;
+    text-align: center;
+    justify-content: center;
+    width: 929px;
+    height: 67px;
+    margin: 46px 30px 5px 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #000000;
+    border-radius:25px;
+}
+
+.top20_tieuchi {
+    display:flex;
+    justify-content:space-between;
+    width: 928px;
+    height: 44px;
+    border-radius: 16px;
+    background: #D9D9D9;
+    margin: 0px 30px 5px 40px;
+    color: #2FB814;
+    margin-right: 250px;
+}
+.seperator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-right: 24px;
+    height: 24px;
+    width: 1px;
+    background-color: #2FB814;
+}
+.top20_tieuchi_left {
+    display:flex;
+    flex-direction: row;
+    margin-left:40px;
+}
+.top20_tieuchi_left h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right:20px;
+    font-size: 30px;
+}
+.top20_tieuchi p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+}
+.top20_tieuchi_right p {
+  
+    /* margin-right:150px; */
+
+}
+
+.top20_tieuchi_right {
+        display:flex;
+        flex-direction:row;
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-right: 160px;
+
+}
+.top20_tieuchi_right p{
+    margin-right: 42px;
+}
+.top20_info {
+    background: #D9D9D9;
+border-radius: 32px;
+margin: 0px 45px 5px 40px;
+display:flex;
+justify-content: space-between;
+height: 62.65px;
+}
+.top20_info_left {
+    display:flex;
+    flex-direction: row;
+
+}
+
+.top20_info_left h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-left:20px;
+    margin-left:20px;
+    color:#2FB814;
+    font-size: 30px;
+    margin-right:40px
+}
+.top20_info p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-right: 64px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+}
+.top20_info img {
+    height:30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.top20_info_right {
+    display:flex;
+    flex-direction: row;
+    margin-left:40px;
+}
+
