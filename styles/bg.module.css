@@ -1,0 +1,13 @@
+.bg {
+    display:flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background: url('../public/bgpic_1.png');
+}
+
+.bg_full {
+    width: 97%;
+    padding: 8px;
+    background: url('../public/bgpic_1.png');
+}

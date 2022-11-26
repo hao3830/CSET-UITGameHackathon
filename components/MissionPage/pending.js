@@ -1,7 +1,7 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import PendingBoard from "../ShareComponents/pending_board";
-
+import Style from "../../styles/bg.module.css";
 const PendingPage =  ({ setUser, user, setCurrPage, currPage }) => {
   return (
     <div className=" flex flex-col h-screen w-screen">
@@ -16,7 +16,7 @@ const PendingPage =  ({ setUser, user, setCurrPage, currPage }) => {
         <div className="w-1/6">
           <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
         </div>
-        <div className=" w-5/6 p-2 ">
+        <div className={Style.bg_full}>
           <PendingBoard userLogin={user} />
         </div>
       </div>
