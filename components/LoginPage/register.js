@@ -51,7 +51,7 @@ const Register = ({ setIsRegis, setUser }) => {
     }
     setIsPending(false)
   };
-
+  
   return (
     <div className={styles.creater}>
       <div

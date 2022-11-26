@@ -1,16 +1,12 @@
 .main {
+    display:flex;
+    padding:100px 100px 80px 100px;
+    flex-direction: column;
+}
+.main1 {
     background: #1E1E1E;
     height:auto;
-
-}
-.main_chunen {
-    position: absolute;
+    display:flex;
     
-    right:0px;
-    height: 2188px;
-    width: 510px;
-    background: url('../source/CSET.png');
-    background-repeat: no-repeat;
-
-    
+    flex-direction: column;
 }

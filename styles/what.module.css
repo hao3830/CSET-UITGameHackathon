@@ -1,15 +1,18 @@
 .what {
     display: flex;
+    justify-content: space-between;
+    color:white;
+    padding-top:100px;
+    max-width: 1400px;
+}
+.what_left {
+    max-width:50%;
 }
 
-.what_left {}
+
 
 .what_left h1 {
-    position: absolute;
-    width: 32.43%;
-    height: 73px;
-    left: 6.94%;
-    top: 800px;
+    
 
     font-family: 'Roboto';
     font-style: normal;
@@ -17,16 +20,14 @@
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
-
+    margin-bottom:20px;
     color: #FFFFFF;
+    margin-top:20%;
 }
 
 .what_left p {
-    position: absolute;
-    width: 35.06%;
-    height: 100px;
-    left: 6.94%;
-    top: 870px;
+
+    
 
     font-family: 'Roboto';
     font-style: normal;
@@ -38,22 +39,20 @@
 }
 
 .what_right_box1 {
-    position: absolute;
-    width: 21.87%;
-    height: 300px;
-    left: 53.12%;
-    top: 750px;
 
+    width: 315px;
+    height: 300px;
+
+  
     background: #2FB814;
 }
 
 .what_right_box2 {
 
-    position: absolute;
-    width: 21.87%;
+    width: 315px;
     height: 300px;
-    left: 69.37%;
-    top: 850px;
 
+    margin-top:-150px;
+    margin-left:-120px;
     background: #FFFFFF;
-}
+}  

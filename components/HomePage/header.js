@@ -2,7 +2,9 @@ import Style from "../../styles/header.module.css";
 export default function HeaderPage({ user, setIsLogin, setIsRegis }) {
   return (
     <div className={Style.header_bar}>
-      <p className={Style.img_header}></p>
+      <p className={Style.img_header}>
+        <a href=""><img href="" src="/gogreen.png"></img></a>
+      </p>
       {user.userName ? (
         <span className=" text-white text-lg pr-32">
           Hi <span className=" text-green-500">{user.userName}</span>

@@ -9,7 +9,7 @@
     background-color: #272424;
     justify-content: right;
     align-items: center;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
 
 
@@ -22,9 +22,6 @@
     height: 80px;
     left: 100px;
     top: 1px;
-
-    background: url('../source/gogreen.png');
-
 }
 
 .header_bar p {
