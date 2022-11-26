@@ -5,15 +5,15 @@ export default function Part() {
             <div className={Style.part_left}>
                 
                 <p className={Style.part_img1}></p>
-                <p>Lorem ipsum dolor sit amet consectetur. Quam massa quisque quam erat. Leo semper accumsan pretium arcu dictum a malesuada. Scelerisque sit enim tincidunt fermentum maecenas sed vitae adipiscing.</p>
+                <p>Friendly interface. Users can easily use it comfortably.</p>
             </div>
             <div className={Style.part_center}>
                 <p className={Style.part_img2}> </p>
-                <p>Lorem ipsum dolor sit amet consectetur. Quam massa quisque quam erat. Leo semper accumsan pretium arcu dictum a malesuada. Scelerisque sit enim tincidunt fermentum maecenas sed vitae adipiscing.</p>
+                <p>Flexible time based on personal schedule. Easily select and complete missions.</p>
             </div>
             <div className={Style.part_right}>
                 <p className={Style.part_img3}></p>
-                <p>Lorem ipsum dolor sit amet consectetur. Quam massa quisque quam erat. Leo semper accumsan pretium arcu dictum a malesuada. Scelerisque sit enim tincidunt fermentum maecenas sed vitae adipiscing.</p>
+                <p>Connecting people, creating good relationships. Together create a better environment.</p>
             </div>
 
         </div>
