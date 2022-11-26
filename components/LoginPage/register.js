@@ -49,7 +49,8 @@ const Register = ({ setIsRegis, setUser }) => {
       userName: userName,
       password: password,
       email: email,
-      _id: respone._id
+      _id: respone._id,
+      score: respone.score
 
     });
     if (respone) {

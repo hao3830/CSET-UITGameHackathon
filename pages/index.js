@@ -4,12 +4,14 @@ import MissionPage from "../components/MissionPage";
 import TaskBoardPage from "../components/MissionPage/taskboard";
 import PendingPage from "../components/MissionPage/pending";
 import DonePage from "../components/MissionPage/done";
+import GiftPage from "../components/MissionPage/gift";
 export default function Home() {
   const [user, setUser] = useState({
     userName: "",
     password: "",
     email: "",
     _id: -1,
+    score: 0
   });
 
   const [currPage, setCurrPage] = useState("");
@@ -47,6 +49,15 @@ export default function Home() {
       {
         currPage == "DONE" && (
           <DonePage
+            setUser={setUser}
+            user={user}
+            setCurrPage={setCurrPage}
+            currPage={currPage}
+          />)
+      }
+       {
+        currPage == "GIFT" && (
+          <GiftPage
             setUser={setUser}
             user={user}
             setCurrPage={setCurrPage}

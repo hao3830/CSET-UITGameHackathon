@@ -1,7 +1,11 @@
 import Sidebar from "../ShareComponents/side_bar";
 import HeaderPage from "../HomePage/header";
 import TaskBoard from "../ShareComponents/taskboard";
+
+import Style from "../../styles/bg.module.css";
+
 import styles from "../../styles/fix_task.module.css"
+
 
 const TaskBoardPage = ({ setUser, user, setCurrPage, currPage }) => {
   return (
@@ -17,7 +21,7 @@ const TaskBoardPage = ({ setUser, user, setCurrPage, currPage }) => {
         <div className="w-1/6">
           <Sidebar setCurrPage={setCurrPage} currPage={currPage} />
         </div>
-        <div className=" w-5/6 p-2">
+        <div className={Style.bg_full}>
           <TaskBoard user={user} />
         </div>
       </div>
