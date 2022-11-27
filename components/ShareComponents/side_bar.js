@@ -24,14 +24,14 @@ const items = [
     label: 'GIFT',
     href: Pages.done,
   },
-  // {
-  //   label: 'GIFT-BOARD',
-  //   href: Pages.done,
-  // },
-  // {
-  //   label: 'CAMERA',
-  //   href: Pages.done,
-  // },
+  {
+    label: 'GIFT-BOARD',
+    href: Pages.done,
+  },
+  {
+    label: 'CAMERA',
+    href: Pages.done,
+  },
 ]
 
 const Sidebar = ({setCurrPage, currPage, user}) => {
@@ -39,7 +39,12 @@ const Sidebar = ({setCurrPage, currPage, user}) => {
   return (
     <div className="relative w-full h-full overflow-hidden rounded-xl bg-base-300 p-2 text-base font-semibold text-white shadow-md rounded-none" >
       <ul className={styles.fix_side_menu}>
-        {items.map((item, index) => (
+        {items.map((item, index) => {
+          if(index == 5 || index == 6)
+            if(user.userName != 'admin')
+              return <></>
+          
+          return (
           <li key={index} className="w-full">
               <span
                 className={`inline-block w-full cursor-pointer rounded-full p-4 text-center duration-300
@@ -51,7 +56,7 @@ const Sidebar = ({setCurrPage, currPage, user}) => {
                 {item.label}
               </span>
           </li>
-        ))}
+        )})}
       </ul>
       <p className={styles.fix_side_footer}>
         Copyright © 2022 CSET - UITGameHackathon

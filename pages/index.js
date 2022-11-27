@@ -5,6 +5,8 @@ import TaskBoardPage from "../components/MissionPage/taskboard";
 import PendingPage from "../components/MissionPage/pending";
 import DonePage from "../components/MissionPage/done";
 import GiftPage from "../components/MissionPage/gift";
+import GiftBoardPage from "../components/MissionPage/gift_board";
+import CamManagerPage from "../components/MissionPage/camer";
 export default function Home() {
   const [user, setUser] = useState({
     userName: "",
@@ -66,7 +68,7 @@ export default function Home() {
       }
       {
         currPage == "GIFT-BOARD" && user.userName =='admin'  && (
-          <GiftPage
+          <GiftBoardPage
             setUser={setUser}
             user={user}
             setCurrPage={setCurrPage}
@@ -75,7 +77,7 @@ export default function Home() {
       }
       {
         currPage == "CAMERA" && user.userName =='admin'  && (
-          <GiftPage
+          <CamManagerPage
             setUser={setUser}
             user={user}
             setCurrPage={setCurrPage}

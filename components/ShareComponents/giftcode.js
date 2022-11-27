@@ -2,7 +2,7 @@ import Style from '../../styles/giftcode.module.css'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { AiOutlineCaretDown } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
-export default function Giftcode({userLogin }) {
+export default function Giftcode() {
     return (
         
         <div className={Style.top20}>
