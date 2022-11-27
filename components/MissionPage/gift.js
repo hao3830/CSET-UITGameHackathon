@@ -7,7 +7,7 @@ export default function GiftPage({ setUser, user, setCurrPage, currPage }) {
         <div className=" flex flex-col h-screen w-screen">
           <div
             style={{
-              height: "80px",
+              height: "110px",
             }}
           >
             <HeaderPage user={user} setIsLogin={() => {}} setIsRegis={() => {}} />;
